@@ -1,0 +1,23 @@
+{{- $platform_default := "unix" -}}
+{{- if (eq .chezmoi.osRelease.id "arch") -}}
+{{- $platform_default = "archlinux" -}}
+{{- else if (eq .chezmoi.osRelease.id "artix") -}}
+{{- $platform_default = "artixlinux" -}}
+{{- else if (eq .chezmoi.os "linux") -}}
+{{- $platform_default = "linux" -}}
+{{- end -}}
+
+{{- $platform := (promptChoice "Platform" (list "archlinux" "artixlinux" "linux" "unix") $platform_default) -}}
+{{- $catppuccin := (promptChoice "Catppuccin palette" (list "latte" "frappe" "macchiato" "mocha") "latte") -}}
+
+{
+	"data": {
+		"htv": {
+			"platform": {{$platform | quote}},
+			"catppuccin": {{$catppuccin | quote}}
+		}
+	},
+	"edit": {
+		"command": "vi"
+	}
+}

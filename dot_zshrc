@@ -1,0 +1,27 @@
+# History
+HISTSIZE=1000
+HISTFILE="$HOME/.histfile"
+SAVEHIST=1000
+setopt appendhistory
+setopt extended_history
+setopt inc_append_history
+
+# Completion system
+zstyle :compinstall filename "$HOME/.zshrc"
+autoload -Uz compinit
+compinit
+
+# Keyboard
+bindkey -e
+
+# Prompt
+if [[ "$HTV_TERM" == 'full' ]]
+then
+    PS1='
+%f%b[%1N][%n@%m][%~]
+%(?.%F{blue}.%F{red}[%?]) %f%b '
+else
+    PS1='
+[%1N][%n@%m][%~]
+%(?..[%?]) $ '
+fi

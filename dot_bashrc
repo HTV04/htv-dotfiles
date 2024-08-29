@@ -1,0 +1,11 @@
+# Prompt
+if [[ "$HTV_TERM" == 'full' ]]
+then
+    PS1="
+[bash][$USER@$HOSTNAME][$PWD]
+  "
+else
+    PS1="
+[bash][$USER@$HOSTNAME][$PWD]
+ $ "
+fi

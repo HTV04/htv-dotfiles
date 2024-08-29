@@ -1,0 +1,11 @@
+# Default editor
+export VISUAL=vi
+export EDITOR=vi
+
+# Wayland
+export ELECTRON_OZONE_PLATFORM_HINT='auto'
+export SDL_VIDEODRIVER='wayland,x11'
+
+# Prompt
+export PS1='
+ $ '
