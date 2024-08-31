@@ -15,25 +15,21 @@ htv-local/bin/autostart-pipewire
 {{/* Catppuccin Latte */}}
 {{if (ne .htv.catppuccin "latte")}}
 .local/share/color-schemes/CatppuccinLatteSky.colors
-.local/share/konsole/catppuccin-latte.colorscheme
 {{end}}
 
 {{/* Catppuccin Frappé */}}
 {{if (ne .htv.catppuccin "frappe")}}
 .local/share/color-schemes/CatppuccinFrappeSapphire.colors
-.local/share/konsole/catppuccin-frappe.colorscheme
 {{end}}
 
 {{/* Catppuccin Macchiato */}}
 {{if (ne .htv.catppuccin "macchiato")}}
 .local/share/color-schemes/CatppuccinMacchiatoSapphire.colors
-.local/share/konsole/catppuccin-macchiato.colorscheme
 {{end}}
 
 {{/* Catppuccin Mocha */}}
 {{if (ne .htv.catppuccin "mocha")}}
 .local/share/color-schemes/CatppuccinMochaSapphire.colors
-.local/share/konsole/catppuccin-mocha.colorscheme
 {{end}}
 
 {{/* Other */}}
