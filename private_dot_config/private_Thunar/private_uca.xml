@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>foot</icon>
+	<name>Open Foot Client Here</name>
+	<submenu></submenu>
+	<unique-id>1725066441951454-1</unique-id>
+	<command>footclient --working-directory %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>feh</icon>
+	<name>Default settings</name>
+	<submenu>Open With Feh</submenu>
+	<unique-id>1725066674440881-2</unique-id>
+	<command>feh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<image-files/>
+</action>
+<action>
+	<icon>feh</icon>
+	<name>Force aliasing</name>
+	<submenu>Open With Feh</submenu>
+	<unique-id>1725067260187462-3</unique-id>
+	<command>feh --force-aliasing %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<image-files/>
+</action>
+</actions>
