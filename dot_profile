@@ -1,11 +1,14 @@
 # Default editor
-export VISUAL=vi
-export EDITOR=vi
+export VISUAL='vi'
+export EDITOR="$VISUAL"
 
-# Wayland
-export ELECTRON_OZONE_PLATFORM_HINT='auto'
+# SDL
 export SDL_VIDEODRIVER='wayland,x11'
+
+# Electron
+export ELECTRON_OZONE_PLATFORM_HINT='auto'
 
 # Prompt
 export PS1='
- $ '
+[login][$USER][$PWD]
+$ '

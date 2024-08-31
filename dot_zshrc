@@ -18,10 +18,10 @@ bindkey -e
 if [[ "$HTV_TERM" == 'full' ]]
 then
     PS1='
-%f%b[%1N][%n@%m][%~]
-%(?.%F{blue}.%F{red}[%?]) %f%b '
+%S zsh  %n@%m  %~ %s
+%(?.%F{blue}.%F{red}[%?] )%B%#%b%f '
 else
     PS1='
-[%1N][%n@%m][%~]
-%(?..[%?]) $ '
+[zsh][%n@%m][%~]
+%(?..[%?] )%# '
 fi

@@ -1,11 +1,11 @@
 # Prompt
 if [[ "$HTV_TERM" == 'full' ]]
 then
-    PS1="
-[bash][$USER@$HOSTNAME][$PWD]
-  "
+    PS1='
+\[\033[7m\] bash  \u@\h  \w \[\033[27m\]
+\[\033[34;1m\]\$\[\033[22;39m\] '
 else
-    PS1="
-[bash][$USER@$HOSTNAME][$PWD]
- $ "
+    PS1='
+[bash][\u@\h][\w]
+\$ '
 fi
