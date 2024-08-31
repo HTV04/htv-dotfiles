@@ -23,6 +23,7 @@ The login shell must also source [`.profile`](dot_profile). [DASH](http://gondor
 * [Bat](https://github.com/sharkdp/bat): ANSI theme
 * [Electron](https://www.electronjs.org/): Wayland support
 * [Foot](https://codeberg.org/dnkl/foot)
+  * Intended to be used in server and client mode.
 * [Git](https://git-scm.com/)
   * Create `~/htv-local/etc/gitconfig` for local configuration.
 * [Makepkg](https://pacman.archlinux.page/): Disable package compression
@@ -65,9 +66,9 @@ This software isn't configured by the dotfiles (with the exception of [additiona
 
 ## Environment
 
-### Directory: `~/htv-local`
+### Directory: [`~/htv-local`](htv-local)
 
-The layout of the [`~/htv-local`](htv-local) directory is based on that of the [Unix filesystem](https://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout). Any custom binaries, scripts, and other support files that do not have an official directory are available here.
+The layout of this directory is based on that of the [Unix filesystem](https://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout). Any custom binaries, scripts, and other support files that do not have an official directory are available here.
 
 In my personal configurations, I use this directory for all of my local files, and it generally assures me that no random applications will write their own files into it.
 
